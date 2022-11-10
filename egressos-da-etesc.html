@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conheça os egressos da ETESC</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/egressos-page.css" />
+
+    <script src="script/global.js" defer></script>
+    <script src="script/egresso.js" defer></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-class">
+      <button class="nav-btn nav-btn-dark-mode-toggle">
+        <img src="img/moon.png" alt="" class="nav-dark-toggle-img" />
+      </button>
+
+      <img src="img/pngFAETEC.png" alt="" class="faetec-logo" />
+
+      <button class="nav-btn nav-btn-toggle">
+        <p class="hide-sr">Menu</p>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <nav class="header-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="egressos-da-etesc.html">Egressos</a></li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li><button class="nav-dark-mode-toggle nav-btn">Dark Mode</button></li>
+      </ul>
+    </nav>
+
+    <div class="nav-active-bg" aria-hidden="true"></div>
+
+    <div class="readmore-popup" aria-hidden="true">
+      <div class="popup-card">
+        <p class="popup-text"></p>
+
+        <button class="btn" id="popup-btn">Fechar</button>
+      </div>
+    </div>
+
+    <main class="container main-container">
+      <section class="start-section">
+        <h1>Conheça nossos Ex-alunos</h1>
+        <div class="flex flex-equal">
+          <div>
+            <p>
+              Dentre vários alunos que passaram pelo Campus de Santa Cruz da
+              FAETEC, muitos se destacaram e hoje estão bem sucedidos no mercado
+              de trabalho. Siga a setinha e veja nossos ex-alunos que são o
+              orgulho da ETESC <i class="fas fa-"></i>
+            </p>
+            <div class="icon-div"><i class="fas fa-arrow-down fa-3x"></i></div>
+          </div>
+
+          <img style="width: 400px;" src="img/home-page-exalunos/montagem.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="cursos-section">
+        <div class="flex cursos-container">
+          <div
+            id="info"
+            class="cursos-tabs flex-column flex-center cursos-container-border"
+          >
+            <img
+              src="img/home-page-cursos/infoimg-old.png"
+              width="100px"
+              id="infoimg"
+              class="cursos-img"
+            />
+            <button class="btn btn-cursos btn-sm hide-sc">Informática</button>
+            <div id="info-arrow" class="arrow-div show"></div>
+          </div>
+
+          <div id="admin" class="cursos-tabs flex-column flex-center">
+            <img
+              src="img/home-page-cursos/adminimg-old.png"
+              width="100px"
+              id="adminimg"
+              class="cursos-img"
+            />
+            <button class="btn btn-cursos btn-sm hide-sc">Administração</button>
+            <div id="admin-arrow" class="arrow-div"></div>
+          </div>
+
+          <div id="quim" class="cursos-tabs flex-column flex-center">
+            <img
+              src="img/home-page-cursos/quimicaimg-old.png"
+              width="100px"
+              id="quimicaimg"
+              class="cursos-img"
+            />
+            <button class="btn btn-cursos btn-sm hide-sc">Química</button>
+            <div id="quim-arrow" class="arrow-div"></div>
+          </div>
+
+          <div id="enfer" class="cursos-tabs flex-column flex-center">
+            <img
+              src="img/home-page-cursos/enfermagemimg-old.png"
+              width="100px"
+              id="enfermagemimg"
+              class="cursos-img"
+            />
+            <button class="btn btn-cursos btn-sm hide-sc">Enfermagem</button>
+            <div id="enfer-arrow" class="arrow-div"></div>
+          </div>
+
+          <div id="eletro" class="cursos-tabs flex-column flex-center">
+            <img
+              src="img/home-page-cursos/eletroimg-old.png"
+              width="100px"
+              id="eletroimg"
+              class="cursos-img"
+            />
+            <button class="btn btn-cursos btn-sm hide-sc">
+              Eletromecânica
+            </button>
+            <div id="eletro-arrow" class="arrow-div"></div>
+          </div>
+
+          <div id="st" class="cursos-tabs flex-column flex-center">
+            <img
+              src="img/home-page-cursos/segurancaimg-old.png"
+              width="100px"
+              id="segurancaimg"
+              class="cursos-img"
+            />
+            <button class="btn btn-cursos btn-sm hide-sc">ST</button>
+            <div id="st-arrow" class="arrow-div"></div>
+          </div>
+        </div>
+
+        <div class="cursos-container-select">
+          <select name="Cursos" id="cursos-select-tag">
+            <option value="info">Informática</option>
+            <option value="admin">Administração</option>
+            <option value="quim">Química</option>
+            <option value="enfer">Enfermagem</option>
+            <option value="eletro">Eletromecânica</option>
+            <option value="st">Segurança do Trabalho</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="flex-column egressos-section">
+        <div class="egressos-container">
+          <!-- Info content -->
+          <div id="info-content" class="cursos-content show">
+            <h3 class="hide-lc">Informática</h3>
+
+            <div id="loading-div"></div>
+          </div>
+
+          <!-- Admin content -->
+          <div id="admin-content" class="cursos-content">
+            <h3 class="hide-lc">Administração</h3>
+          </div>
+
+          <!-- Quimica content -->
+          <div id="quim-content" class="cursos-content">
+            <h3 class="hide-lc">Química</h3>
+          </div>
+
+          <!-- Enfermagem content -->
+          <div id="enfer-content" class="cursos-content">
+            <h3 class="hide-lc">Enfermagem</h3>
+          </div>
+
+          <!-- Eletro content -->
+          <div id="eletro-content" class="cursos-content">
+            <h3 class="hide-lc">Elétromecânica</h3>
+          </div>
+
+          <!-- ST content -->
+          <div id="st-content" class="cursos-content">
+            <h3 class="hide-lc">Segurança do Trabalho</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul>
+        <li>&copy;All rights reserved</li>
+        <li>
+          Endereço:
+          <span
+            >Largo do Bodegão, 46 - Santa Cruz, Rio de Janeiro - RJ,
+            23550-020</span
+          >
+        </li>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="egressos-da-etesc.html">Egressos</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        </ul>
+      </ul>
+    </footer>
+
+    <!--Plug in Vlibras-->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!--Style VLIBRAS-->
+    <style>
+      .access-button {
+        width: 35% !important;
+        border-radius: 50px !important;
+        border: 5px solid #ffffff1f !important;
+      }
+    </style>
+
+
+    <!-- FireBase -->
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+
+      import {
+        getDatabase,
+        ref,
+        get,
+        set,
+        child,
+        update,
+        remove,
+      } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-database.js";
+
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyANaYu1URk9yqLYvbioWs1gG2Zm9xGZYiU",
+        authDomain: "egressos-etesc.firebaseapp.com",
+        databaseURL: "https://egressos-etesc-default-rtdb.firebaseio.com",
+        projectId: "egressos-etesc",
+        storageBucket: "egressos-etesc.appspot.com",
+        messagingSenderId: "986088985970",
+        appId: "1:986088985970:web:669719a9e4495101e839eb",
+        measurementId: "G-DBW5GNM24G",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      // Initialize Cloud Storage and get a reference to the service
+      // const storage = getStorage(app);
+      // console.log(storage);
+
+      const loadingDiv = document.querySelector("#loading-div");
+
+      const RTdb = getDatabase();
+
+      let errorResult = {
+        erro: {
+          nome: "Em breve...",
+          curso: "",
+          desc: "A próxima história de sucesso pode ser a sua",
+          img: "img/400x400temp.png",
+          ano: "",
+          btn: ""
+        },
+      };
+
+      function getData(path) {
+        loadingDiv.style.display = "block";
+        return new Promise(function (res, rej) {
+          get(child(ref(RTdb), path))
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                let result = snapshot.val();
+                res(result);
+              } else {
+                res(errorResult);
+              }
+            })
+            .catch((error) => {
+              console.log("error" + error);
+            });
+        });
+      }
+
+      // For Firebase
+      let infoPath = "alunos/info/";
+      let adminPath = "alunos/admin/";
+      let quimPath = "alunos/quim/";
+      let enferPath = "alunos/enfer/";
+      let eletroPath = "alunos/eletro/";
+      let stPath = "alunos/st/";
+
+      let infoData = await getData(infoPath);
+      let adminData = await getData(adminPath);
+      let quimData = await getData(quimPath);
+      let enferData = await getData(enferPath);
+      let eletroData = await getData(eletroPath);
+      let stData = await getData(stPath);
+      loadingDiv.style.display = "none";
+      // console.log(infoData);
+      // console.log(stData);
+
+      // Setting the cards with the data
+      const infoContainer = document.getElementById("info-content");
+      const adminContainer = document.getElementById("admin-content");
+      const quimContainer = document.getElementById("quim-content");
+      const enferContainer = document.getElementById("enfer-content");
+      const eletroContainer = document.getElementById("eletro-content");
+      const stContainer = document.getElementById("st-content");
+
+      function setContainer(container, datas) {
+        Object.values(datas).forEach((data) => {
+          SetCards(data, container);
+          console.log(data.keys);
+        });
+      }
+      setContainer(infoContainer, infoData);
+      setContainer(adminContainer, adminData);
+      setContainer(quimContainer, quimData);
+      setContainer(enferContainer, enferData);
+      setContainer(eletroContainer, eletroData);
+      setContainer(stContainer, stData);
+
+      function SetCards(data, container) {
+        // Construct card content
+        const content = `
+          <div class="exalunos-card">
+            <div class="img-div">
+              <img src="${data.img}" alt="" />
+            </div>
+            <div class="exalunos-descricao">
+              <h2>${data.nome}</h2>
+              <div>
+                <p class="curso-p">${data.curso}</p>
+                <p>
+                  ${data.ano}
+                </p>  
+              </div>
+              <p>
+
+                ${data.desc}
+                
+                ${data.btn}
+              </p>
+            </div>
+          </div>
+        `;
+
+        // Append newyly created card element to the container
+        container.innerHTML += content;
+      }
+
+      // POPUP Handling
+
+      const readMoreBtnAll = document.querySelectorAll(".btn-readmore");
+      const closePopupBtn = document.querySelector("#popup-btn");
+
+      const popupScreen = document.querySelector(".readmore-popup");
+      const popupText = document.querySelector(".popup-text");
+
+      readMoreBtnAll.forEach((readMoreBtn) => {
+        readMoreBtn.addEventListener("click", (e) => {
+          const current = e.target;
+          document.querySelector("body").classList.toggle("noscroll");
+
+          popupScreen.classList.toggle("popup-active");
+          popupText.innerHTML = current.parentNode.innerHTML;
+          popupText.removeChild(popupText.lastElementChild);
+          console.log(popupText);
+        });
+      });
+
+      closePopupBtn.addEventListener("click", (e) => {
+        document.querySelector("body").classList.toggle("noscroll");
+        popupScreen.classList.toggle("popup-active");
+      });
+    </script>
+  </body>
+</html>

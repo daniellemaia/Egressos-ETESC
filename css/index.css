@@ -1,0 +1,430 @@
+/* ===========
+ Home section styles
+ =============*/
+
+ .home-section {
+  width: 100%;
+  min-height: 720px;
+  /* background: #444; */
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-section-bg {
+  width: 100%;
+  min-height: 720px;
+  /* background: #444; */
+
+  background: linear-gradient(#002855a7, #002855a7),
+    url(../img/home-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  /*filter: blur(5px);*/
+  position: absolute;
+}
+
+.home-section-right-img {
+  width: 300px;
+  margin-left: 2em;
+}
+
+.home-text {
+  /* display: none; */
+  /*background: rgba(255, 255, 255, 0.21);*/
+  color: rgb(225, 225, 225);
+  /* position: absolute;
+  top: 150px;
+  left: 100px; */
+
+  padding: 50px;
+
+  border-radius: 5px;
+  min-height: 300px;
+  max-width: 600px;
+
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, .2);*/
+  z-index: 2;
+}
+.home-text h1 {
+  color: var(--color-light);
+  font-size: clamp(3em, 5vw, 3.5em);
+  margin-bottom: 60px;
+}
+.home-text p {
+  max-width: 35ch;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+/* ===========
+ EX alunos styles
+ =============*/
+
+ .exalunos-section > h2 {
+  text-align: center;
+  font-size: clamp(2.5rem,  10vw, 4rem);
+  margin: 3rem 0 1rem 0;
+}
+.exalunos-section > p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
+}
+
+
+.separator {
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+ }
+
+.exalunos-card {
+  /* flex: 1; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 330px;
+  min-height: 450px;
+  padding: 2rem 1.5rem;
+  margin: 1rem;
+
+  background: var(--card-bg);
+  color: var(--card-clr);
+  border-radius: 20px;
+
+  transition: transform 300ms ease;
+}
+.exalunos-card:hover {
+  transform: scale(1.1);
+}
+
+ .exaluno-img img {
+   max-width: 200px;
+   border-radius: 50%;
+   transition: border-radius 200ms ease;
+ }
+ .exalunos-card:hover img {
+  border-radius: 64% 36% 69% 31% / 30% 67% 33% 70%;
+ }
+
+ .exaluno-descricao h3 {
+  margin: .5rem 0;
+  font-size: 1.5rem;
+ }
+
+ .accent-egressos-text {
+   color: var(--color-dark2);
+   font-size: 1.25rem;
+   margin-bottom: .5rem;
+ }
+
+.egresso-link-div {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.egresso-link-div i  {
+  margin-left: 1rem;
+}
+ /* ===========
+ Relatos Section styles
+ =============*/
+
+.ex-alunos-section {
+  width: 100%;
+  padding: 10px 75px 40px;
+
+ }
+
+.ex-alunos-section > h2 {
+  text-align: center;
+}
+
+.ex-alunos-section > h2 {
+  margin: 2rem 0 .5rem 0;
+  font-size: clamp(2.5em, 5vw, 3em);
+}
+
+.ex-alunos-section > p {
+  text-align: center;
+  margin: .5rem 0 2rem 0;
+  font-size: 1.25rem;
+}
+/* .exalunos-home-card:hover img {
+  border-radius: 64% 36% 69% 31% / 30% 67% 33% 70%;
+} */
+
+/* Egressos Container */
+
+.egressos-section-container {
+  padding: .25rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+.egressos-home-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10%;
+
+  margin-bottom: 1rem;
+}
+
+.egressos-home-card:nth-child(even) {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+
+}
+
+.egressos-img-div {
+  text-align: center;
+}
+.egressos-img-div img {
+  width: 175px;
+  border-radius: 50%;
+  
+}
+
+.egressos--descricao {
+  position: relative;
+  width:100%;
+  max-width: 500px;
+  background-color: var(--card-bg);
+  /* margin-left: 4rem; */
+  padding: 2rem 3rem;
+  border-radius: 10px;
+
+}
+
+.egressos--descricao p {
+  color: var(--card-clr)
+}
+
+.egressos--descricao::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 70px;
+  
+  width: 0;
+  height: 0;
+  /* border-top: 100px solid #000; */
+  border-bottom: 25px solid var(--card-bg);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  transform: rotate(270deg);
+}
+.egressos-home-card:nth-child(even) .egressos--descricao::before {
+  left: 98%;
+  transform: rotate(90deg);
+
+}
+
+
+
+@media (max-width: 870px) {
+  .egressos-home-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10%;
+  
+    margin-bottom: 1rem;
+  }
+  .egressos-img-div {
+    margin-bottom: 1rem;
+
+  }
+  
+  .egressos-home-card:nth-child(even) {
+    align-self: flex-end;
+    flex-direction: column;
+  
+  }
+  .egressos-home-card:nth-child(even) .egressos-img-div {
+    align-self: flex-end;
+    /* flex-direction: column; */
+  
+  }
+
+  .egressos--descricao::before { 
+    top: -15px;
+    left: 50px;
+    transform: rotate(0);
+  }
+
+  .egressos-home-card:nth-child(even) .egressos--descricao::before {
+    top: -15px;
+    left: 70%;
+    transform: rotate(0);
+  
+  }
+}
+
+/* ===========
+ descricao styles
+ =============*/
+
+.descricao-section {
+  width: 100%;
+  /* height: 100vh; */
+  /* background: ; */
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+.descricao-section > h2 {
+  margin: 75px 0 50px 0;
+  font-size: 3em;
+  color: var(--color-light);
+}
+.descricao-section > p {
+  font-size: 1.5em;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: var(--color-light);
+  opacity: 0.9;
+}
+
+.descricao-section div {
+  margin-top: 100px;
+}
+.descricao-links {
+  margin-bottom: 5rem;
+}
+
+.descricao-links a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color-link);
+  transition: 300ms ease;
+}
+.descricao-links a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+/* ===========
+ Cursos styles
+ =============*/
+
+/* .cursos-section {
+ background: #87f1ff8a;
+
+}  */
+.cursos-section > h2 {
+  text-align: center;
+  margin: 1rem 0 40px 0;
+  padding: 50px 0;
+  font-size: 3em;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 2rem;
+
+  flex-direction: column;
+}
+
+.container-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+.container img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.card {
+  /* margin: 20px; */
+  padding: 20px;
+  background: var(--cursos-card-bg);
+  width: 100%;
+  max-width: 320px;
+  min-height: 600px;
+
+  /*align-items: stretch;*/
+
+  border-radius: 10px;
+
+  transition: box-shadow 300ms ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.212);
+}
+
+.card h3 {
+  margin: 25px 0;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--color-light);
+}
+
+.card p {
+  line-height: 1.5;
+  color: var(--color-light);
+}
+
+.cursos-card-img {
+  max-width: 100%;
+}
+
+/* ===========
+ Media querys
+ =============*/
+
+@media (max-width: 775px) {
+.home-section{
+  justify-content: center;
+
+}
+
+.home-section-right-img{
+  display: none;
+}
+  .home-text {
+    width: 100%;
+    text-align: center;
+  }
+  .home-text h1 {
+    margin-bottom: 30px;
+  }
+
+  .ex-alunos-section {
+    width: 100%;
+    padding: 50px 5px;
+  }
+
+  .img-div {
+    max-width: 300px;
+    /* margin: 0 auto; */
+  }
+
+}
